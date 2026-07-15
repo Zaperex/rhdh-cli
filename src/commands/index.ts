@@ -68,6 +68,15 @@ export function registerPluginCommand(program: Command) {
       'Provides the dynamic plugins root folder when the dynamic plugins content should be copied when using the `--dev` argument.',
     )
     .option(
+      '--watch',
+      'Watch source files, rebuild the dynamic plugin bundle in dist-dynamic on change, and serve assets over HTTP.',
+    )
+    .option(
+      '--port <number>',
+      'HTTP port for serving dynamic plugin assets in watch mode.',
+      String(7708),
+    )
+    .option(
       '--scalprum-config <file>',
       'Allows retrieving scalprum configuration from an external JSON file, instead of using a `scalprum` field of the `package.json`. Frontend plugins only.',
     )

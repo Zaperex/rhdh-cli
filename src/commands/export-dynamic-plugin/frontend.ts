@@ -22,7 +22,7 @@ import chalk from 'chalk';
 import { OptionValues } from 'commander';
 import fs from 'fs-extra';
 
-import path from 'path';
+import path from 'node:path';
 
 import { buildScalprumPlugin } from '../../lib/builder/buildScalprumPlugin';
 import { productionPack } from '../../lib/packager/productionPack';
